@@ -84,6 +84,7 @@ struct ContentView: View {
         }
         
         if(questionCount == 8) {
+            highScore = score > highScore ? score : highScore
             showingGameOver = true
         }
         else {
